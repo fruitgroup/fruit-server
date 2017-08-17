@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('phone',11)->comment('phone number');
             $table->tinyInteger('sex')->comment('sex 1: man 2: woman');
             $table->rememberToken();
-            $table->timestamps();
+            $table->timestampsTz();
         });
     }
 
